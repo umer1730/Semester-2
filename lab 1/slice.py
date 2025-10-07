@@ -44,3 +44,10 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f']
 # Slice from 2nd last to 4th last (reverse order)
 slice_part = letters[-2:-5:-1]
 print("Negative slice:", slice_part)
+
+
+print()
+print("-----------------")
+def mul(a,b):
+    return a * b
+print(mul(a=2,b=3))
