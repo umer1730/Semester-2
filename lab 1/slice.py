@@ -56,4 +56,4 @@ print()
 print("-------------------")
 def div(a,b):
     return a / b
-print(div(a=2,b=12))
+print(div(a=12,b=2))
