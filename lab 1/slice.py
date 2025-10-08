@@ -51,3 +51,9 @@ print("-----------------")
 def mul(a,b):
     return a * b
 print(mul(a=2,b=3))
+
+print()
+print("-------------------")
+def div(a,b):
+    return a / b
+print(div(a=2,b=12))
