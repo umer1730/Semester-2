@@ -38,3 +38,10 @@ print("---next----")
 high_scores = [('Alice',150),('Bob',90),('Charlie',200)]
 sorted_scores = sorted(high_scores, key=lambda item: item[1])
 print(sorted_scores)
+
+
+print()
+print("---------------")
+high_scores = [('Alice',150),('Bob',90),('Charlie',200)]
+sorted_scores = sorted(high_scores,key = lambda item: item[0])
+print(sorted_scores)
