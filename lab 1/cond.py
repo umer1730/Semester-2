@@ -15,7 +15,7 @@ if a == b:
 elif a > b:
     print("First number is greater then second")
 else:
-    print("Second number is greater hen first")
+    print("Second number is greater then first")
 
 
 print()    
