@@ -1,12 +1,12 @@
-# class FileHandler:
-#     def __init__(self,filename):
-#         self.file = open(filename,"w")
-#         print(f"File {filename} opened")
-#     def __del__(self):
-#         self.file.close()
-#         print("File closed")
-# fh = FileHandler("test.txt")
-# del fh
+class FileHandler:
+    def __init__(self,filename):
+        self.file = open(filename,"w")
+        print(f"File {filename} opened")
+    def __del__(self):
+        self.file.close()
+        print("File closed")
+fh = FileHandler("test.txt")
+del fh
 class Student:
     def __init__(self, name, roll_no, marks):
         self.name = name
