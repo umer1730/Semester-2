@@ -1,12 +1,12 @@
-# class Session:
-#     active_sessions =0
-#     def __init__(self):
-#         Session.active_sessions +=1
-#     def __del__(self):
-#         Session.active_sessions -= 1
-# s1 = Session()
-# s2 = Session()
-# print(f"Active sessions: {Session.active_sessions}")
+class Session:
+    active_sessions =0
+    def __init__(self):
+        Session.active_sessions +=1
+    def __del__(self):
+        Session.active_sessions -= 1
+s1 = Session()
+s2 = Session()
+print(f"Active sessions: {Session.active_sessions}")
 class Student:
     def __init__(self, name, roll_no, marks):
         self.name = name
