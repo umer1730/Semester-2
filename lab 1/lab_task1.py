@@ -52,7 +52,7 @@ print(a+b)
 print(type(a+b))
 
 #typecasting done automatically
-a=20
+a="20"
 b=int(a)
 print(type(a),type(b))
 
@@ -64,6 +64,7 @@ print(type(a))
 a = float(input("Enter a number: "))
 print(type(a))
 
+print()
 #topic:string
 str1 = 'This is'
 str2 = " apple"
@@ -86,6 +87,7 @@ marks = [34,67,89,67.8,78]
 print(len(marks))
 print(marks[0])
 
+
 print()
 #python list contain different data types
 items = [34.4,45.5,"Ali"]
@@ -99,6 +101,7 @@ print(marks[0:len(marks)])
 print(marks[:len(marks)])
 print(marks[0:])
 
+print()
 #lists are mutable and strings are not immutable
 items=[34,45.5,"Ali"]
 items[1]="good"
