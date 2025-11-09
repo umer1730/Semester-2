@@ -7,12 +7,13 @@ class Session:
 s1 = Session()
 s2 = Session()
 print(f"Active sessions: {Session.active_sessions}")
+
+print()
 class Student:
     def __init__(self, name, roll_no, marks):
         self.name = name
         self.roll_no = roll_no
         self.marks = marks
-
     def get_grade(self):
         if self.marks >= 80:
             return 'A'

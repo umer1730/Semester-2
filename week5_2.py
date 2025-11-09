@@ -40,3 +40,12 @@ print(student1.introduce())
 print(student2.introduce())
 
 
+print()
+class Student:
+    def __init__(self,name,marks):
+        self.name= name
+        self.marks = marks
+    def average(self):
+        return sum(self.marks) / len(self.marks)
+s1 = Student("Ali",[99,98,97])
+print(f"Hi {s1.name} your average score is {s1.average()}")

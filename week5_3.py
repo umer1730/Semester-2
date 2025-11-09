@@ -15,14 +15,10 @@ class Rectangle:
     def set_dimensions(self, length, width):
         self.length = length
         self.width = width
-
-    def area(self):
-        return self.length * self.width
     def perimeter(self):
         return 2 * (self.length+self.width)
 rect = Rectangle()
 rect.set_dimensions(4, 5)
-print(f"Area: {rect.area()}")
 print(f"Perimeter: {rect.perimeter()}")
 
 
