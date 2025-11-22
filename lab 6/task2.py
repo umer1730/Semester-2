@@ -5,4 +5,3 @@ class Temperature:
         return 9 / 5 * self.__celcius+32
 temp = Temperature(25)
 print(temp.get_temp())
-
