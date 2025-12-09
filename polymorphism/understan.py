@@ -10,7 +10,6 @@ print(calc.multiply(4))
 
 print(calc.multiply(4,3))
 print(calc.multiply(4,3,2))
-
 print()
 class Animal:
     def sound(self):
