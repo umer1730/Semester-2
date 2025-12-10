@@ -22,7 +22,6 @@ class K(I,J):
     pass
 # print(K.__mro__)
 print([cls.__name__ for cls in K.__mro__])
-
 print()
 class A:
     pass
