@@ -6,7 +6,6 @@ class Dog(Animal):
         print("Dog bark")
 d = Dog()
 d.sound()
-
 print()
 class Person:
     def __init__(self,name,age):
