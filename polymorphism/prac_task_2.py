@@ -12,6 +12,7 @@ class Cart:
         return f"{self.name} - Total Price: {self.cart_price}"
 crt1 = Cart("ali",222)
 crt2 = Cart("ali",222)
+
 print(crt1<crt2)
 print(crt1>crt2)
 print(crt1==crt2)
