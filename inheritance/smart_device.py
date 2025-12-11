@@ -9,6 +9,7 @@ class Camera:
         self.resolution_mp = resolution_mp
     def take_photo(self):
         print(f"{self.resolution_mp} resolution confirms a photo capture")
+
 class Fitness_track:
     def __init__(self,sensor_count):
         self.sensor_count = sensor_count
