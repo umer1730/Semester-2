@@ -1,0 +1,39 @@
+print()
+class Student:
+    school = "UET"
+    count = 0
+    def __init__(self,name):
+        self.name =  name
+        Student.count += 1
+    @classmethod
+    def get_school_info(cls):
+        return f"School: {cls.school} \nStudents: {cls.count}"
+    @classmethod
+    def reset_count_to(cls,x):
+        if x > 0:
+            Student.count = x
+stu1 = Student("Ali")
+print(stu1.count)
+stu2 = Student("Sara")
+print(stu2.count) 
+print(Student.get_school_info())
+student = Student.reset_count_to(20)
+print(stu1.count)
+print(Student.get_school_info())
+
+print()
+class Temperature:
+    Freezing_point = 0
+    def __init__(self,celcius):
+        self.celcius = celcius
+    def to_fahrenheit(self):
+        return (self.celcius*9/5)+32
+    @classmethod
+    def from_fahrenheit(cls,fahrenheit):
+        celcius = (fahrenheit-32)*5/9
+        return cls(celcius)
+temp_c = Temperature(25)
+print(f"Standard creation: {temp_c.celcius:.2f}C")
+temp_f = Temperature.from_fahrenheit(68)
+print(f"ALternative creation: {temp_f.celcius:.2f}C")
+print(f"Check conversion: {temp_f.to_fahrenheit():.2f}F")    
