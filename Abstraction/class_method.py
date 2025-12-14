@@ -36,4 +36,45 @@ temp_c = Temperature(25)
 print(f"Standard creation: {temp_c.celcius:.2f}C")
 temp_f = Temperature.from_fahrenheit(68)
 print(f"ALternative creation: {temp_f.celcius:.2f}C")
-print(f"Check conversion: {temp_f.to_fahrenheit():.2f}F")    
+print(f"Check conversion: {temp_f.to_fahrenheit():.2f}F")   
+
+print()
+class Greeks:
+    course = "Python"                 
+    list_of_instance = []             
+
+    def __init__(self, name):          
+        self.name = name
+        Greeks.list_of_instance.append(self)
+
+    @classmethod
+    def get_course(cls):               
+        return f"Course: {cls.course}"
+
+    @classmethod
+    def get_instance_count(cls):        
+        return f"Number of instances: {len(cls.list_of_instance)}"
+
+    @staticmethod
+    def welcome_message():             
+        return "Welcome to Geeks for Geeks"
+
+# creating objects
+g1 = Greeks("Ali")
+g2 = Greeks("Bob")
+
+print(Greeks.get_course())
+print(Greeks.get_instance_count())
+print(Greeks.welcome_message())
+
+print()
+class Student:
+    name = "Ali"
+    def print_name(self):
+        print("The name is: ",self.name)
+Student.print_name = classmethod(Student.print_name)
+Student.print_name()
+
+print()
+
+    
