@@ -1,3 +1,4 @@
+#Functional abstraction means hiding the internal working of a function and showing only what the function does, not how it does it
 class Order:
     def __init__(self,items):
         self.items = items
