@@ -136,5 +136,33 @@ person_2 = Person.fromBirthYear("Saad",9)
 print(f"Person 1 age: {person_1.age}")
 print(f"Person 2 age: {person_2.age}")
 
+print()
+class Student:
+    count  = 0
+    total_cgpa = 0
+    def __init__(self,name,age,gpa):
+        self.name = name
+        self.age = age
+        self.gpa = gpa
+        Student.count = 1
+        Student.total_cgpa = gpa
+    
+    def get_info(self):
+        print(f"{self.name} \n{self.age} \n{self.gpa}")
 
-        
+    @classmethod
+    def get_count(cls):
+        return f"Total no of student's count: {cls.count}"
+    
+    @classmethod
+    def average_gpa(cls):
+        if cls.count == 0:
+            return 0
+        else:
+            return f"{cls.total_cgpa / cls.count}"
+student_1 = Student("Saad",9,3.2)
+student_2 = Student("Saim",10,3.3)
+student_3 = Student("Saeed",11,4.0)
+student_4 = Student("Salah",12,3.5)
+print(Student.get_count())
+print(Student.average_gpa())
