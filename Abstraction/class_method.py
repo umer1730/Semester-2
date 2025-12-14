@@ -1,4 +1,5 @@
-print()
+#A class method is a method that works with the class itself, not with individual objects.
+#It can access and modify class variables.
 class Student:
     school = "UET"
     count = 0
@@ -114,3 +115,26 @@ print(isinstance(man, Man))
 
 man1 = Man.from_FathersAge('John', 1965, 20)
 print(isinstance(man1, Man))
+
+print()
+from datetime import date
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    
+    @classmethod
+    def fromBirthYear(cls,name,year):
+        return cls(name,date.today().year - year)
+    
+    @staticmethod
+    def adult(age):
+        return age >= 18
+    
+person_1 = Person("Ali",12)
+person_2 = Person.fromBirthYear("Saad",9)
+print(f"Person 1 age: {person_1.age}")
+print(f"Person 2 age: {person_2.age}")
+
+
+        
