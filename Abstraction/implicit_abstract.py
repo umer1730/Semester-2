@@ -1,3 +1,5 @@
+#Implicit abstraction happens automatically when we use built-in features of a language.
+
 class BankAccount:
     def __init__(self,initial_balance):
         self._balance =  initial_balance
