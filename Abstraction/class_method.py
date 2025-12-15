@@ -175,3 +175,13 @@ class Student:
         cls.name = name
 Student.change_school("MTB")
 print(Student.school)
+
+print()
+class Car:
+    wheels = 4
+    def instance_method(self):
+        return "Instance method"
+    @classmethod
+    def class_method(cls):
+        return f"Class has {cls.wheels} wheels"
+print(Car.class_method())
