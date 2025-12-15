@@ -17,3 +17,13 @@ class Order:
         pass
 order = Order(["Shoes", "Bag"])
 order.process_order()
+
+print()
+class Calculator:
+    def add(self,a,b):
+        return a+b
+    def multiply(self,a,b):
+        return a*b
+c = Calculator()
+print(c.add(2,3))
+print(c.multiply(2,3))
