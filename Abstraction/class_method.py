@@ -166,3 +166,12 @@ student_3 = Student("Saeed",11,4.0)
 student_4 = Student("Salah",12,3.5)
 print(Student.get_count())
 print(Student.average_gpa())
+
+print()
+class Student:
+    school = "Iqra School"
+    @classmethod
+    def change_school(cls,name):
+        cls.name = name
+Student.change_school("MTB")
+print(Student.school)
