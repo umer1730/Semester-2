@@ -185,3 +185,31 @@ class Car:
     def class_method(cls):
         return f"Class has {cls.wheels} wheels"
 print(Car.class_method())
+
+print()
+class ATM:
+    def __init__(self, balance, pin):
+        self.__balance = balance
+        self.__pin = pin
+
+    def withdraw(self, amount):
+        if self.__verify_pin() and self.__check_balance(amount):
+            self.__balance -= amount
+            print("Cash withdrawn")
+            print("Remaining balance:", self.__balance)
+
+    def __verify_pin(self):
+        entered_pin = int(input("Enter Pin: "))
+        if entered_pin == self.__pin:
+            return True
+        else:
+            print("Invalid PIN")
+            return False
+    def __check_balance(self, amount):
+        if amount <= self.__balance:
+            return True
+        else:
+            print("Insufficient balance")
+            return False
+atm = ATM(100000, 12345)
+atm.withdraw(12122)
