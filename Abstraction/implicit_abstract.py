@@ -10,3 +10,10 @@ class BankAccount:
 b = BankAccount(0)  
 b.deposit(222)
 print(b.get_balance())
+
+print()
+class Student:
+    def show(self):
+        print("Student info")
+s = Student()
+s.show()
