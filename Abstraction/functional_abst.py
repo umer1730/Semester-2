@@ -27,3 +27,16 @@ class Calculator:
 c = Calculator()
 print(c.add(2,3))
 print(c.multiply(2,3))
+
+print()
+class Online_shop:
+    def place_order(self):
+        self.__check_stock()
+        self.__process_payment()
+        print("Order place")
+    def __check_stock(self):
+        print("Stock available")
+    def __process_payment(self):
+        print("Payment successful")
+shop = Online_shop()
+shop.place_order()
