@@ -122,3 +122,5 @@ highest_marks = students[highest_student]
 print("Students and their marks:", students)
 print(f"\nTop student: {highest_student} with {highest_marks} marks.")
 
+print()
+print("implicit abstraction class")
