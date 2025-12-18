@@ -46,3 +46,29 @@ class Circle:
     def set_radius(self,value):
         self._radius = value
     radius = property(get_radius,set_radius)
+
+print()
+class Bank:
+    def __init__(self, balance):
+        self.__balance = balance
+    @property
+    def balance(self):
+        return self.__balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+        else:
+            print("Invalid deposit amount")
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Invalid withdrawal")
+b = Bank(100000)
+print(b.balance)
+
+b.deposit(1200)
+b.withdraw(1000)
+print(b.balance)
