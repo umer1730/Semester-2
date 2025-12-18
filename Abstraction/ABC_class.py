@@ -34,7 +34,7 @@ print("Rectangle Perimeter:", r.perimeter())
 print("Circle Area:", c.area())
 print("Circle Perimeter:", c.perimeter())
 
-
+print()
 class Animal(ABC):
     @abstractmethod
     def make_sound(self):
