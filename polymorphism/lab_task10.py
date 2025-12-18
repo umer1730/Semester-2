@@ -10,4 +10,3 @@ class Complex:
         print(self.real,"i",self.img,"j")
 add_1 = Complex(1,2)
 print(add_1.num())
-
