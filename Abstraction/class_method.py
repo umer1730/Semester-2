@@ -213,3 +213,27 @@ class ATM:
             return False
 atm = ATM(100000, 12345)
 atm.withdraw(12122)
+
+print()
+class Company:
+    company_name = "Arbisoft"
+    persons = 0
+    def __init__(self,name):
+        self.name = name
+        Company.persons += 1
+    @classmethod
+    def get_info(cls):
+        return f"Company Name: {cls.company_name} \nPersons: {cls.persons}"
+    @classmethod
+    def reset_count(cls,x):
+        if x > 0:
+            Company.persons = x
+person1 = Company("Ali")
+print(person1.persons)
+person2 = Company("Arslan")
+print(person2.persons)
+print(Company.get_info())
+
+person = Company.reset_count(20)
+print(person1.persons)
+print(Company.get_info())
