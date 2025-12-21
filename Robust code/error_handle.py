@@ -26,7 +26,25 @@ finally:
     print("Execution complete.")
 
 print()
-number = 10
+number = 1
 if number > 5:
     raise Exception(f"The number should not exceed 5. ({number = })")
 print("This line comes after the forced exception")
+
+print()
+number = 2
+try:
+    if number > 5:
+        raise Exception
+except:
+    print(f"The number should not exceed 5")
+print("This line comes after the forced exception")
+
+print("----------")
+print()
+number = 10
+try:
+    if number > 5:
+        raise Exception(f"The number should not exceed 5 ({number=})")
+finally:
+    print("This line comes after the forced exception")
