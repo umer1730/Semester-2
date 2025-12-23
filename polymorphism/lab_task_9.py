@@ -45,3 +45,18 @@ d = MySQl()
 d.connect()
 s = Sqlite()
 s.connect()
+
+print()
+class Number:
+    def __init__(self,x,y):
+        self.x= x
+        self.y= y
+    def __floordiv__(self,other):
+        fdx= self.x // other.x
+        fdy = self.y // other.y
+        return Number(fdx,fdy)
+    def __str__(self):
+        return (f"floor div x = {self.x} , y = {self.y}")
+fdx = Number(2,3)
+fdy = Number(4,5)
+print(fdx // fdy)
