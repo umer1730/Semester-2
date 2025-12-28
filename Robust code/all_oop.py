@@ -67,3 +67,26 @@ manger.show_info()
 
 developer = Developer("Arslan","D24","Python")
 developer.show_info()
+
+# create polymorphism class
+print()
+class Dog:
+    def speak(self):
+        print("Bark")
+class Cat:
+    def speak(self):
+        print("Meow")
+class Robot:
+    def speak(self):
+        print("Beep")
+def make_it_speak(entity):
+    entity.speak()
+
+dog = Dog()
+cat = Cat()
+robot = Robot()
+
+make_it_speak(dog)
+make_it_speak(cat)
+make_it_speak(robot)
+  
