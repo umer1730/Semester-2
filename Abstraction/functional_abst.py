@@ -40,3 +40,14 @@ class Online_shop:
         print("Payment successful")
 shop = Online_shop()
 shop.place_order()
+
+print()
+class DataProcess:
+    def __init__(self,data):
+        self.data = data
+    def calculate_average(self):
+        return sum(self.data) / len(self.data)
+    def process_data(self):
+        return self.calculate_average()
+dp = DataProcess([10,20,30])
+print(dp.process_data())
