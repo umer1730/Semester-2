@@ -61,3 +61,15 @@ print()
 x = -1
 if x < 0:
     raise Exception("Sorry,no numbers below zero")
+
+print()
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Ali")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")  
