@@ -48,3 +48,11 @@ try:
         raise Exception(f"The number should not exceed 5 ({number=})")
 finally:
     print("This line comes after the forced exception")
+
+print()
+try:
+    print(x)
+except:
+    print("Something went wrong")
+finally:
+    print("The try except is finished")
