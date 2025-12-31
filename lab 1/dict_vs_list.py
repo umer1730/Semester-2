@@ -82,3 +82,10 @@ for x in fruits:
     break
   print(x) 
 
+print()
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x) 
+
