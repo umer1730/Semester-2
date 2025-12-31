@@ -69,3 +69,8 @@ print(7 in r)
 print()
 r = range(0, 10, 2)
 print(len(r))
+
+print()
+cars = ["Ford", "Volvo", "BMW"]
+cars[0] = "Toyota"
+print(cars)
