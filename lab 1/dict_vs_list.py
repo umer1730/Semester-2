@@ -74,3 +74,11 @@ print()
 cars = ["Ford", "Volvo", "BMW"]
 cars[0] = "Toyota"
 print(cars)
+
+print()
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x) 
+
