@@ -73,3 +73,14 @@ try:
     f.close()
 except:
   print("Something went wrong when opening the file")  
+
+
+print()
+try:
+    x = int(input("Enter a number: "))
+    y = 10 / x
+    print(y)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+except ValueError:
+    print("Invalid input")
