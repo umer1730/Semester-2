@@ -145,3 +145,26 @@ p = Product("laptop",12000)
 print(p.display_price_with_tax())
 Product.set_tax_rate(0.10)
 print(p.display_price_with_tax())
+
+
+
+
+print()
+class Document:
+    Book_count= 0
+    def __init__(self,text):
+        self.text = text
+        Document.Book_count += 1
+    def get_alpha_count(self):
+        letters = []
+        for ch in self.text:
+            if ch.isalpha():
+                letters.append(ch)
+            return len(letters)
+    @classmethod
+    def from_non_string(cls,data):
+        return cls(str(data))
+d1 = Document("whkjdcdldd")
+d2 = Document.from_non_string(12345)
+print(d1.get_alpha_count())
+print(d2.get_alpha_count())
