@@ -104,3 +104,23 @@ p3 = p1*p2
 print(p3)
 p4 = p1-p2
 print(p4)
+
+
+print()
+class Cart:
+    def __init__(self,name,cart_cost):
+        self.name = name
+        self.cart_cost = cart_cost
+    def __gt__(self,other):
+        return self.cart_cost > other.cart_cost
+    def __it__(self,other):
+        return self.cart_cost < other.cart_cost
+    def __eq__(self,other):
+        return self.cart_cost == other.cart_cost
+    def __str__(self):
+        return f"Name of cart: {self.name},Total price: {self.cart_cost}"
+cart1 = Cart("Laptop",12222)
+cart2 = Cart("Computer",100000)
+print(cart1 > cart2)
+print(cart1 < cart2)
+print(cart1 == cart2)
