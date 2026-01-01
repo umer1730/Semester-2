@@ -124,3 +124,24 @@ cart2 = Cart("Computer",100000)
 print(cart1 > cart2)
 print(cart1 < cart2)
 print(cart1 == cart2)
+
+print()
+print()
+class Product:
+    Tax_rate = 0.05
+    def __init__(self,name,price):
+        self.name = name
+        self.price = price
+    def display_price_with_tax(self):
+        final_price = self.price + (self.price * Product.Tax_rate)
+        return final_price
+    @classmethod
+    def set_tax_rate(cls,new_rate):
+        cls.Tax_rate = new_rate
+    @staticmethod
+    def is_valid_price(price):
+        return price > 0
+p = Product("laptop",12000)
+print(p.display_price_with_tax())
+Product.set_tax_rate(0.10)
+print(p.display_price_with_tax())
