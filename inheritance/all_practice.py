@@ -194,3 +194,59 @@ class Plane(Vehicle):
         print("Plane move in air")
     def refill(self):
         print("plan refills 500L fuels")
+
+print()
+
+
+print()
+from abc import ABC, abstractmethod
+class Bank_Account:
+    @abstractmethod
+    def check_balance(self):
+        pass
+    @abstractmethod
+    def deposit(self):
+        pass
+    @abstractmethod
+    def withdraw(self):
+        pass
+class Current(Bank_Account):
+    def __init__(self,balance= 100):
+        self.balance = balance
+    def check_balance(self):
+        return self.balance
+    def deposit(self,amount):
+        if amount >= 0:
+            self.balance += amount
+        else:
+            print("Invalid")
+    def withdraw(self,amount):
+        if amount >= 0 and amount > self.balance:
+            self.balance -= amount
+        else:
+            print("Invalid")
+class Savings(Bank_Account):
+    profit = 0.05
+    def check_balance(self,balance = 100):
+        self.balance = balance
+        total = self.balance + (self.balance * Savings.profit) 
+        print(f"Saving balance is : {total}")
+    def deposit(self,amount):
+        if amount >= 0:
+            self.balance += amount
+        else:
+            print("Invalid")
+    def withdraw(self,amount):
+        if amount >= 0 and amount > self.balance:
+            self.balance -= amount
+        else:
+            print("Invalid")
+cur = Current()
+cur.deposit(67)
+cur.check_balance()
+cur.withdraw(10)
+
+save = Savings()
+cur.deposit(67)
+cur.check_balance()
+cur.withdraw(10)
