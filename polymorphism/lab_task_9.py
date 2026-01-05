@@ -60,3 +60,19 @@ class Number:
 fdx = Number(2,3)
 fdy = Number(4,5)
 print(fdx // fdy)
+
+
+print()
+class Vector:
+    def __init__(self, values):
+        self.values = values
+    def __add__(self, other):
+        if len(self.values) != len(other.values):
+            raise ValueError("Dimension mismatch")
+        return Vector([a + b for a, b in zip(self.values, other.values)])
+    def __str__(self):
+        return str(self.values)
+v1 = Vector([1, 2, 3])
+v2 = Vector([4, 5, 6])
+print(v1 + v2)
+
