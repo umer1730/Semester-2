@@ -53,3 +53,13 @@ class Square(Shape):
         return self.side * self.side
 s = Square(4)
 print(s.area()) 
+
+print()
+class Vehicle:
+    def speed(self):
+        print("Vehicle speed")
+class Car(Vehicle):
+    def speed(self):
+        print("Car speed is 120 Km/h")
+v = Car()
+v.speed()
