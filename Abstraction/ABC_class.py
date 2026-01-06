@@ -53,3 +53,26 @@ dog = Dog()
 dog.make_sound()
 dog.move()
 dog.sleep()
+
+
+print()
+from abc import ABC,abstractmethod
+import math
+class Shape:
+    @abstractmethod
+    def area(self):
+        pass
+class Rectangle(Shape):
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length*self.width
+class Circle(Shape):
+    def __init__(self,radius):
+        self.radius = radius
+    def area(self):
+        return math.pi * self.radius ** 2
+Shape = [Rectangle(3,4),Circle(2)]
+for i in Shape:
+    print(i.area())
