@@ -48,4 +48,3 @@ almond_tea = Almond(
     green_tea="2 tea spoon"
 )
 order_2 = Order(almond_tea)
-order_2.serve()
