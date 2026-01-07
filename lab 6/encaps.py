@@ -91,3 +91,18 @@ stud = Student(85)
 print(stud.grade)
 stud.grade = 90
 print(stud.grade) 
+
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance = balance
+    @property
+    def balance(self):
+        return self.__balance
+    @balance.setter
+    def balance(self,amount):
+        if amount <= 0:
+            raise ValueError("Amount can not be negative")
+        self.__balance == amount
+acc = BankAccount(500)
+acc.balance = 1000
+print(acc.balance)
