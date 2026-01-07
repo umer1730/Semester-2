@@ -81,3 +81,25 @@ print("Total copies: ",b.get_copies())
 def add(x,y):
     return x+y
 print(add(5,3))
+
+print()
+import pickle
+class ObjectStore:
+    def __init__(self):
+        self.__objects = {}
+    def add(self, obj_id, obj):
+        self.__objects[obj_id] = obj
+    def get_by_id(self, obj_id):
+        return self.__objects.get(obj_id)
+    def save(self, filename):
+        with open(filename, "wb") as f:
+            pickle.dump(self.__objects, f)
+    def load(self, filename):
+        with open(filename, "rb") as f:
+            self.__objects = pickle.load(f)
+store = ObjectStore()
+store.add(1, "Book")
+store.add(2, {"name": "Alice"})
+store.save("db.pkl")
+store.load("db.pkl")
+print(store.get_by_id(2))
