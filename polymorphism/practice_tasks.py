@@ -63,3 +63,27 @@ class Car(Vehicle):
         print("Car speed is 120 Km/h")
 v = Car()
 v.speed()
+
+print()
+from abc import ABC, abstractmethod
+class SortStrategy(ABC):
+    @abstractmethod
+    def sort(self, data):
+        pass
+class QuickSort(SortStrategy):
+    def sort(self, data):
+        return sorted(data)
+class MergeSort(SortStrategy):
+    def sort(self, data):
+        return sorted(data)
+class Sorter:
+    def __init__(self, strategy: SortStrategy):
+        self.strategy = strategy
+    def set_strategy(self, strategy):
+        self.strategy = strategy
+    def sort(self, data):
+        return self.strategy.sort(data)
+s = Sorter(QuickSort())
+print(s.sort([5, 2, 8]))
+s.set_strategy(MergeSort())
+print(s.sort([5, 2, 8]))
