@@ -100,3 +100,20 @@ p.stock = -3
 p.price = 125000     
 p.stock = 15     
 p.display_info()
+
+print()
+class Money:
+    def __init__(self,amount,currency):
+        self.__amount = amount
+        self.__currency = currency
+    @property
+    def amount(self):
+        return self.__amount
+    def add(self,other):
+        if self.__currency != other.__currency:
+            raise ValueError("Currency mismatch")
+        return Money(self.__amount + other.__amount,self.__currency)
+m1 = Money(100,"USD")
+m2 = Money(50, "USD")
+m3 = m1.add(m2)
+print(m3.amount)
