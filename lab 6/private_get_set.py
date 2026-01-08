@@ -120,3 +120,26 @@ print("Salary: ",emp.salary)
 emp.salary = 6000
 print("Updated salary:", emp.salary)
 emp.salary = -1000
+
+
+print()
+class StockMarket:
+    def __init__(self):
+        self.observers = []
+        self.price = 0
+    def subscribe(self,observer):
+        self.observers.append(observer)
+    def set_price(self,price):
+        self.price = price
+        for obs in self.observers:
+            obs.update(price)
+class MobileApp:
+    def update(self,price):
+        print("Mobile app notify")
+class Webapp:
+    def update(self,price):
+        print("Web app notified")
+market  =StockMarket()
+market.subscribe(MobileApp())
+market.subscribe(Webapp())
+market.set_price(500)
