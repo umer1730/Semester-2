@@ -87,3 +87,19 @@ s = Sorter(QuickSort())
 print(s.sort([5, 2, 8]))
 s.set_strategy(MergeSort())
 print(s.sort([5, 2, 8]))
+
+
+print()
+class Bird:
+    pass
+class FlyingBird(Bird):
+    def fly(self):
+        print("Flying")
+class Penguin(Bird):
+    def swim(self):
+        print("Swimming")
+class Sparrow(FlyingBird):
+    pass
+f = FlyingBird()
+f.fly()
+
