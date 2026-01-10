@@ -18,3 +18,10 @@ with open("report.txt","w") as f:
     f.write("System Log\n")
     f.write("Process completed successfully")
 
+print()
+try:
+    file = open("store.txt", "r")
+    content = file.read()
+    print(content)
+finally:
+    file.close()
