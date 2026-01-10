@@ -31,3 +31,22 @@ class Book:
 b = Book("poems")
 # Delete the object
 del b
+
+print()
+class Vehicle:
+    def __init__(self,brand,speed):
+        self.brand = brand
+        self.speed = speed
+    def move(self):
+        print(f"{self.brand} moves with {self.speed}Km/h speed")
+class Car(Vehicle):
+    def __init__(self,brand,speed,fuel_types):
+        super().__init__(brand,speed)
+        self.fuel_types = fuel_types
+    def move(self):
+        print(f"{self.brand} moves with {self.speed}Km/h speed and consumes {self.fuel_types} fuel")
+c = Car("Toyata",200,"1 litres")
+c.move()
+
+v = Vehicle("Suzuki",100)
+c.move()
