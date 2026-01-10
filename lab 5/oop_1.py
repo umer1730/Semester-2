@@ -57,3 +57,20 @@ my_playlist = Playlist("Favorites")
 my_playlist.add_song("Bohemian Rhapsody")
 my_playlist.add_song("Stairway to Heaven")
 my_playlist.show_songs()
+
+print()
+class Animal:
+  def __init__(self,name):
+    self.name = name
+  def speak(self):
+    print(f"{self.name} spoke hello")
+class Dog(Animal):
+  def __init__(self,name):
+    super().__init__(name)
+  def speak(self):
+    print(f"Dog barks")
+d = Dog("German")
+d.speak()
+
+a = Animal("cat")
+a.speak()
