@@ -165,3 +165,18 @@ intro = Teacher("Arslan","Physics")
 intro.info()
 intro = Student("Uzair",10)
 intro.info()
+
+print()
+class GrandParent:
+    def family(self):
+        return "Smith"
+class Parent(GrandParent):
+    def parent(self):
+        return "From parent"
+class Child(Parent):
+    def child(self):
+        return "From child"
+c = Child()
+print(c.child())
+print(c.parent())
+print(c.family())
