@@ -76,3 +76,24 @@ v1 = Vector([1, 2, 3])
 v2 = Vector([4, 5, 6])
 print(v1 + v2)
 
+print()
+class Point:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __add__(self,other):
+        x = self.x + other.X
+        y = self.y + other.year
+        return x,y
+    def __sub__(self,other):
+        x = self.x - other.x
+        y = self.y - other.y
+        return x,y
+    def __str__(self):
+        return f"{self.x},{self.y}"
+p1 = 1
+p2 =3
+p3 = p1+p2
+print(p3)
+p4 = p1-p2
+print(p4)
