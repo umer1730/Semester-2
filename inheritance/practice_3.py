@@ -48,3 +48,26 @@ c= Car("Toyota","gli")
 c.info()
 b = Bike("Ninja",2022)
 b.info()
+
+print()
+class Device:
+    def __init__(self, power_source):
+        self.power_source = power_source
+        print("Device initialized")
+class Computer(Device):
+    def __init__(self, power_source, cpu_cores):
+        super().__init__(power_source) 
+        self.cpu_cores = cpu_cores
+        print("Computer initialized")
+
+class Server(Computer):
+    def __init__(self, power_source, cpu_cores, uptime_target):
+        
+        if cpu_cores <= 0:
+            uptime_target = 0
+            
+        super().__init__(power_source, cpu_cores) # Passing data to Computer
+        self.uptime_target = uptime_target
+        print(f"Server initialized with {self.uptime_target}% uptime target")
+
+s = Server("AC Power", 0, 99.9) 
