@@ -27,4 +27,13 @@ c1.model = "2025"
 print(c1.type)
 print(c1.model)
 c1.start()
-        
+
+print()
+class Shape:
+    def __init__(self,radius):
+        self.radius = radius
+class Circle(Shape):
+    def area(self):
+        return 3.14 * self.radius ** 2
+c = Circle(5)
+print(c.area())        
