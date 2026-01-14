@@ -103,3 +103,23 @@ class Sparrow(FlyingBird):
 f = FlyingBird()
 f.fly()
 
+print()
+class Device:
+    def __init__(self, brand, **kwargs):
+        super().__init__(**kwargs)
+        self.brand = brand
+        print(f"Device {self.brand} initialized.")
+
+class WiFiConnected:
+    def __init__(self, ip_address, **kwargs):
+        super().__init__(**kwargs)
+        self.ip_address = ip_address
+        print(f"Connected to {self.ip_address}.")
+
+class SmartCamera(Device, WiFiConnected):
+    def __init__(self, brand, ip_address, resolution):
+        super().__init__(brand=brand, ip_address=ip_address)
+        self.resolution = resolution
+
+cam = SmartCamera("Sony", "192.168.1.1", "4K")
+print("Order of search:", SmartCamera.__mro__)
