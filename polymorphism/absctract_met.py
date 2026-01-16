@@ -84,3 +84,19 @@ c.sorting([1, 3, 2])
 c = msort()
 c.sorting([1, 3, 2])
 
+
+print()
+class FruitBasket:
+    def __init__(self,items):
+        self.items = items
+    def __len__(self):
+        return len(self.items)
+    def __getitem__(self,index):
+        return self.items[index]
+    def __contains__(self,fruit):
+        return fruit in self.items
+    
+my_basket = FruitBasket(["Apple","Mango","Banana"])
+print(f"Basket size: {len(my_basket)}")
+print(f"First Fruit: {my_basket[0]}")
+print(f"Is apple there? {'Apple' in my_basket}")

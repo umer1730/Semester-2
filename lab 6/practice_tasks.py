@@ -117,3 +117,64 @@ m1 = Money(100,"USD")
 m2 = Money(50, "USD")
 m3 = m1.add(m2)
 print(m3.amount)
+
+print()
+class BankAccount:
+    def __init__(self,balance,pin):
+        self.__pin = pin
+        self.__balance = balance 
+        self.count = 0
+        self.active = True
+
+    def deposit(self,amount,pin):
+        if not self.active:
+            print("Account closed")
+        if pin == self.__pin:
+            print("Correct pin")
+            if amount > 0:
+                self.__balance += amount
+                self.count += 1
+                print(f"Your balance after depositing amount is ${self.__balance}")
+            else:
+                print("Invalid amount")
+
+        else:
+            print("Invalid pin")
+        
+        if self.count == 3:
+            self.active = False
+            print(f"Account closed, Final balance: {self.__balance}")
+        
+    def withdraw(self,amount,pin):
+        if not self.active:
+            print("Account closed")
+        if pin == self.__pin:
+            print("Correct pin")
+            if amount > 0 and amount <= self.__balance:
+                self.__balance -= amount
+                self.count += 1
+                print(f"Your Balance after withdraw amount is ${self.__balance}")
+            else:
+                print("Invalid amount")
+        else:
+            print("Invalid pin")
+        if self.count == 3:
+            self.active = False
+            print("Account closed. Final balance:", self.__balance)
+
+    def check_balance(self,pin):
+        if not self.active:
+            print("Account closed")
+        if pin == self.__pin:
+            self.count += 1
+            return self.__balance
+        else:
+            print("wrong pin")
+        if self.count == 3:
+            self.active = False
+            print("Account closed. Final balance:", self.__balance)
+
+b = BankAccount(1200,1234)
+b.deposit(200,1234)
+print(b.check_balance(1234))
+b.withdraw(400,1234)
