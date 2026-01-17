@@ -100,3 +100,4 @@ my_basket = FruitBasket(["Apple","Mango","Banana"])
 print(f"Basket size: {len(my_basket)}")
 print(f"First Fruit: {my_basket[0]}")
 print(f"Is apple there? {'Apple' in my_basket}")
+
