@@ -31,3 +31,4 @@ class SecureLogger(Logger, Authenticator):
 secure = SecureLogger()
 secure.log("This is a test")      
 secure.authenticate("Alice")      
+
