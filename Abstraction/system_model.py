@@ -21,3 +21,4 @@ folder = Folder()
 folder.add(f1)
 folder.add(f2)
 print("Total Size:", folder.get_size())
+
