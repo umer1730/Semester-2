@@ -103,3 +103,14 @@ store.add(2, {"name": "Alice"})
 store.save("db.pkl")
 store.load("db.pkl")
 print(store.get_by_id(2))
+
+print()
+class Cycle:
+    def __init__(self,company_name,size):
+        self.company_name = company_name
+        self.size = size
+    def info(self):
+        print(f"Company: {self.company_name}\nSize: {self.size}")
+
+c = Cycle("Sohrab",12)
+c.info()
