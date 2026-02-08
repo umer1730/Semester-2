@@ -114,3 +114,13 @@ class Cycle:
 
 c = Cycle("Sohrab",12)
 c.info()
+
+print()
+class question:
+    def __init__(self,question_1,question_2):
+        self.question_1 = question_1
+        self.question_2 = question_2
+    def ans(self):
+        print(f"Question 1: {self.question_1}\nQuestion 2: {self.question_2}")
+a = question("wdeyejygskvkvf","dkjcdhkvn")
+a.ans()
