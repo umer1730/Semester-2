@@ -25,3 +25,7 @@ try:
     print(content)
 finally:
     file.close()
+
+print()
+with open("store.txt","w") as f:
+    f.write("this store is best")
