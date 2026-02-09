@@ -124,3 +124,16 @@ class question:
         print(f"Question 1: {self.question_1}\nQuestion 2: {self.question_2}")
 a = question("wdeyejygskvkvf","dkjcdhkvn")
 a.ans()
+
+print()
+class cutler:
+    def __init__(self,name):
+        self.name = name
+class type(cutler):
+    def __init__(self,name,size):
+        super().__init__(name)
+        self.size = size
+    def info(self):
+        print(f"Give me {self.size} inch {self.name}")
+t = type("Fork",3)
+t.info()
