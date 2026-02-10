@@ -136,3 +136,6 @@ print("use single backslash\'' and print inverted comma")
 
 print()
 print("use single backslash\t and make three tab s")
+
+print()
+print("use single backslash\n and make next line")
