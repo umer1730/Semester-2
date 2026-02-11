@@ -50,3 +50,10 @@ print("Sorted List:", numbers)
 target_value = int(input("Enter the number to search: "))
 result = binary_search(numbers, target_value)
 print(result)
+
+print()
+letters = [
+    ["A","B","C","D"],
+    ["E","F","G","H"]
+]
+print(letters[0][2])
