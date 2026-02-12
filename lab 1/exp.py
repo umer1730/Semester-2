@@ -57,3 +57,11 @@ letters = [
     ["E","F","G","H"]
 ]
 print(letters[0][2])
+
+print()
+letters = [
+    ["A","B","C","D"],
+    ["E","F","G","H"]
+]
+letters[0][0] = "Z"
+print(letters[0][0])
