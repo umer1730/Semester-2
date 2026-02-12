@@ -93,3 +93,11 @@ elif days in ["Sunday"]:
     print("70% discount")
 else:
     print("Invalid day")
+
+
+print()
+cars = ["Volvo","BMW","Ford","Mazda","Tesla"]
+for i in cars:
+    print(i)
+
+print(cars[2])
