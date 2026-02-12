@@ -63,3 +63,9 @@ print("-------------------")
 def sub(a,b):
     return a - b
 print(sub(3,2))
+
+print()
+for i in range(1,3):
+    print("Outer: ",i)
+    for j in range(4):
+        print(" Inner: ",j)
