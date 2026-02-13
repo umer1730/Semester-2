@@ -89,3 +89,8 @@ for x in fruits:
     continue
   print(x) 
 
+print()
+cars = ["Volvo","Ford","Mazda","Mercedes"]
+for i in cars:
+  print(i)
+
