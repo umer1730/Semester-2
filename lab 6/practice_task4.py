@@ -26,3 +26,17 @@ class Counter:
         print(f"Currents count in {self.counts}")
 c= Counter(220)
 del c
+
+print()
+class Register:
+    def __init__(self,topic_name,person_name):
+        self.topic_name = topic_name
+        self.person_name = person_name
+class Online(Register):
+    def __init__(self,topic_name,person_name,website_name):
+        super().__init__(topic_name,person_name)
+        self.website_name = website_name
+    def info(self):
+        print(f"Topic: {self.topic_name}\nPerson: {self.person_name}\nWebsite: {self.website_name}")
+online = Online("Energy band theory","Ali","Byju's")
+online.info()  
