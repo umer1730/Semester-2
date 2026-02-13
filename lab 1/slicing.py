@@ -36,3 +36,9 @@ print("---Negative slice---")
 letters = ['a','b','c','d','e','f']
 slice_part = letters[-2:-5:-1]
 print("Negative slice: ",slice_part)
+
+print()
+for i in range(1,4):
+    for j  in range(1,4):
+        print(i*j)
+    
