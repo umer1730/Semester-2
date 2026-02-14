@@ -94,3 +94,7 @@ cars = ["Volvo","Ford","Mazda","Mercedes"]
 for i in cars:
   print(i)
 
+print()
+a = int(input("Enter no: "))
+square = a**2
+print("Square: ",square)
