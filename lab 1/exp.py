@@ -65,3 +65,10 @@ letters = [
 ]
 letters[0][0] = "Z"
 print(letters[0][0])
+
+print()
+num = int(input("Enter number: "))
+if num%2 == 0:
+    print("Even")
+else:
+    print("Odd")
