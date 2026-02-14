@@ -75,3 +75,9 @@ print()
 print("-----------")
 from math import sqrt
 print(sqrt(16))
+
+print()
+sum = 0
+for i in range(0,6):
+    sum = sum+i
+    print(sum)
