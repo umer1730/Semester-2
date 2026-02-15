@@ -72,3 +72,10 @@ if num%2 == 0:
     print("Even")
 else:
     print("Odd")
+
+print()
+n = int(input("Enter number: "))
+for i in range(0,n):
+    for j in range(i+1):   
+        print("*",end=" ")
+    print()    
