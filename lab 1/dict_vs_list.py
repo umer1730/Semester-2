@@ -98,3 +98,10 @@ print()
 a = int(input("Enter no: "))
 square = a**2
 print("Square: ",square)
+
+print()
+n=int(input("Enter num: "))
+for i in range(0,n):
+  for j in range(i,0,-1):
+    print(j,end=" ")
+  print()
