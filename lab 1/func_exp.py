@@ -81,3 +81,12 @@ sum = 0
 for i in range(0,6):
     sum = sum+i
     print(sum)
+
+print()
+n = int(input("Enter number: "))
+for i in range(1, n):
+    ch = "A"
+    for j in range(1, n):
+        print(ch, end=" ")
+        ch = chr(ord(ch) + 1)
+    print()
