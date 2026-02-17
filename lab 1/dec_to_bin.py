@@ -9,3 +9,12 @@ def decNum(n):
     
     return ans
 print(decNum(42))
+
+
+print()
+print("Bitwise")
+print("left shift")
+print(10 >> 1)   # a / 2 ki power b
+
+print("right shift")
+print(8 << 1) 
