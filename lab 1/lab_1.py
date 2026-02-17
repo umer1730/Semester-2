@@ -18,3 +18,15 @@ temp = a
 a = b
 b = temp
 print("After swapping: a =", a, ", b =", b)
+
+print()
+n = int(input("Enter number: "))
+i =2
+while i <= (n-1):
+    if n%i == 0:
+        print("Not prime")
+        break
+    else:
+        i += 1
+        print("prime")
+        break
