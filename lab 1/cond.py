@@ -139,3 +139,14 @@ print("use single backslash\t and make three tab s")
 
 print()
 print("use single backslash\n and make next line")
+
+
+print()
+num = [5,15,22,1,-15,24]
+smallest = min(num)
+largest = max(num)
+# for i in range(0,6):
+#     if (num[i] < smallest):
+#         smallest = num[i]
+print("Smallest index number is: ",smallest)
+print("Largest index number is: ",largest)
