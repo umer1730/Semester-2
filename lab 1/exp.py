@@ -79,3 +79,9 @@ for i in range(0,n):
     for j in range(i+1):   
         print("*",end=" ")
     print()    
+
+print()
+a = 4
+b =  8
+result = a | b
+print(result)    
