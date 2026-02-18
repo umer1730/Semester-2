@@ -90,3 +90,9 @@ for i in range(1, n):
         print(ch, end=" ")
         ch = chr(ord(ch) + 1)
     print()
+
+print()
+a = 4
+b =  8
+result = a & b
+print(result)
