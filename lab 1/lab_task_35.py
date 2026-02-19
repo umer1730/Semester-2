@@ -36,3 +36,14 @@ for x in fruits:
     if x != 'apple':
         newlist.append(x)
 print(newlist)
+
+
+print()
+def linearSearch(arr,size,target):
+    for i in range(0,size):
+        if arr[i] == target:
+            return i
+        
+    return -1
+arr = [4,2,7,8,1,2,5]
+print(linearSearch(arr,7,8))
