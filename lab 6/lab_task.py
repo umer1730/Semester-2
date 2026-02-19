@@ -108,3 +108,37 @@ def greet():
     print("Hello!")
 greet()
 
+print()
+class Solution:
+    
+    def pair_sum(self, nums, target):
+        ans = []
+        n = len(nums)
+        i = 0
+        j = n - 1
+
+        while i < j:
+            current_sum = nums[i] + nums[j]
+
+            if current_sum > target:
+                j -= 1
+            elif current_sum < target:
+                i += 1
+            else:
+                ans.append(i)
+                ans.append(j)
+                return ans
+
+        return ans
+
+
+nums = [2, 7, 11, 15]
+target = 13
+
+s = Solution()
+ans = s.pair_sum(nums, target)
+
+if ans:
+    print(ans[0], ",", ans[1])
+else:
+    print("No pair found")
