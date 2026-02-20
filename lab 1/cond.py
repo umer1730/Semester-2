@@ -150,3 +150,10 @@ largest = max(num)
 #         smallest = num[i]
 print("Smallest index number is: ",smallest)
 print("Largest index number is: ",largest)
+
+print()
+def numbers(num):
+    for i in num:
+        if i > 3:
+            print(i)
+print(numbers([1,3,4,7,8,9]))
