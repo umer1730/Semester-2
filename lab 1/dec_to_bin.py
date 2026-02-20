@@ -18,3 +18,10 @@ print(10 >> 1)   # a / 2 ki power b
 
 print("right shift")
 print(8 << 1) 
+
+print()
+name = input("Enter name: ")
+def personName(name):
+    if name == "a":
+        print("yes a is present")
+print(personName(name))
