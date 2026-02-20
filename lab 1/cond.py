@@ -157,3 +157,14 @@ def numbers(num):
         if i > 3:
             print(i)
 print(numbers([1,3,4,7,8,9]))
+
+print()
+num = int(input("Enter num: "))
+if num == 1:
+    print("1")
+if num == 2:
+    print("2")
+if num == 3:
+    print("3")
+if num == 4:
+    print("4")
