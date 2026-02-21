@@ -16,9 +16,14 @@ class Student:
         self.age = int(input("Enter age: "))
         self.courses = enroll_courses(5)
     def display_info(self):
-        print(f"Name: {self.name}")
+        
         print(f"Age: {self.age}")
-        print(f"Enrolled Courses: {self.courses}")
+        if self.age < 18:
+            print("Your age is less than 18, so you cannot enroll in these courses.")
+        else:
+            print(f"Name: {self.name}")
+            print(f"Enrolled Courses: {self.courses}")
+
 student =Student()
 student.display_info()
 
