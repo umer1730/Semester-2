@@ -8,6 +8,10 @@ with open("D:\\Sem 2\\Sem 3\\CSV files\\plain.csv","r",encoding="utf-8") as f:
 
         if marks > 80:
             print(row[0], marks)
+        
+        # count students from lahore 
+        if marks > 80:
+            print(row[0], marks)
 
 
         
