@@ -69,3 +69,14 @@ for i in range(1,3):
     print("Outer: ",i)
     for j in range(4):
         print(" Inner: ",j)
+
+print()
+def remove_duplicates(lst):
+    unique_list = []
+    for item in lst:
+        if item not in unique_list:
+            unique_list.append(item)
+    return unique_list
+
+arr = [10, 20, 30, 20, 40, 10, 50]
+print(remove_duplicates(arr))
