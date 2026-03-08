@@ -1,0 +1,7 @@
+INPUT_FILE = "stud.csv"
+OUTPUT_FILE = "output.csv"
+PRICE_COL = 1        
+THRESHOLD = 20
+
+SAMPLE_FRACTION = 0.5     
+RANDOM_SEED = 42
