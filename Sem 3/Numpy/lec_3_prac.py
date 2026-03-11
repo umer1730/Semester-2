@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.linalg import inv
 
 A = np.array([[5,4], [3,2]])
 
@@ -26,4 +27,9 @@ print(arr.T)
 # transpose shape
 print(arr.T.shape)
 
+print()
+print("Linalg module")
+X = np.array([[1,2],[3,4]])
 
+X_inv = inv(X)
+print(X @ X_inv)
