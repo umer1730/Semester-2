@@ -123,3 +123,10 @@ data[data<0] = 0
 print(data,"\n")
 mask = (names == "Bob") | (names == "Will")
 print(mask)
+
+print()
+print("Transposing arrays------")
+arr = np.arange(15).reshape((3,5))
+print(arr.T,"\n")
+#Dot product: X^T @ X
+print(np.dot(arr.T,arr))
