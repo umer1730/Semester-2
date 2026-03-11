@@ -156,3 +156,11 @@ arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(arr.mean(axis = 1)) # mean of each row
 print(arr.sum(axis = 0)) # sum of each column
 
+print()
+print("Sorting arrays-----")
+arr = np.random.standard_normal(6)
+print(arr.sort()) #rr is chanaged returns none
+print()
+sorted_arr = np.sort(arr)
+print(sorted_arr)
+
