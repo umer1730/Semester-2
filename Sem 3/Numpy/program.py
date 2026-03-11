@@ -164,3 +164,15 @@ print()
 sorted_arr = np.sort(arr)
 print(sorted_arr)
 
+print()
+print("Reshaping and ravel")
+arr = np.arange(8).reshape((4,2))
+print(arr)
+rav = arr.ravel()
+print(rav)
+
+print("-------flatten")
+flat = arr.flatten()
+print(flat)
+
+
