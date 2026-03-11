@@ -143,3 +143,9 @@ arr = np.random.standard_normal((4,4))
 # if val > 0 , return  2 else return -2
 result = np.where(arr > 0,2,-2)
 print(result)
+
+print()
+print("Statistics & Aggregation-------")
+print(arr.mean()) #global mean
+print(arr.sum(axis = 0)) # column totals
+print(arr.mean(axis = 0)) #column wise mean
