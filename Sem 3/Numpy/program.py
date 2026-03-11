@@ -109,3 +109,11 @@ M = np.array([
 ])
 print(M[1:3,1:3])
 
+print()
+print("-----filtering")
+names = np.array(["Bob","Joe","Will","Bob"])
+data = np.random.standard_normal((4,2))
+filtered = data[names == "Bob"]
+print(data,"\n")
+print(filtered)
+
