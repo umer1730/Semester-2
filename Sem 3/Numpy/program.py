@@ -136,3 +136,10 @@ print("Universal functions (Unary)------")
 arr = np.arange(10)
 print(np.sqrt(arr),"\n")
 print(np.exp(arr)) #e^x
+
+print()
+print("Vectorized logic------")
+arr = np.random.standard_normal((4,4))
+# if val > 0 , return  2 else return -2
+result = np.where(arr > 0,2,-2)
+print(result)
