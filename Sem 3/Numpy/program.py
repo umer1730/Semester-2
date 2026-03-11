@@ -149,3 +149,10 @@ print("Statistics & Aggregation-------")
 print(arr.mean()) #global mean
 print(arr.sum(axis = 0)) # column totals
 print(arr.mean(axis = 0)) #column wise mean
+
+print()
+print("aggreation along axes--------")
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr.mean(axis = 1)) # mean of each row
+print(arr.sum(axis = 0)) # sum of each column
+
