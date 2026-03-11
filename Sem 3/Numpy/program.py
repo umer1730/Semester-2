@@ -130,3 +130,9 @@ arr = np.arange(15).reshape((3,5))
 print(arr.T,"\n")
 #Dot product: X^T @ X
 print(np.dot(arr.T,arr))
+
+print()
+print("Universal functions (Unary)------")
+arr = np.arange(10)
+print(np.sqrt(arr),"\n")
+print(np.exp(arr)) #e^x
