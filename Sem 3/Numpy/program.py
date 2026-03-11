@@ -67,4 +67,45 @@ int = arr.astype(np.int32)
 print(int)
 
 print()
+print("element wise")
+arr = np.array([[1,2],[3,4]])
+print(arr * arr)
+print(arr + 10)
+
 print()
+print("indexing")
+arr = np.arange(10)
+print(arr[5:8])
+arr[5:8] = 12
+print(arr)
+
+print()
+print("views vs copies")
+my_slice = arr[5:8]
+my_slice = 12345
+print(arr)
+
+print()
+print("multidimensional indexing")
+arr2d = np.array([
+[1, 2, 3],  # Row 0
+[4, 5, 6],  # Row 1
+[7, 8, 9]   # Row 2
+])
+# 1. Get Row 0, Column 2 (The number 3)
+print(arr2d[0, 2])    
+# 2. Get the whole Row 1 (The middle row)
+print(arr2d[1, :])    
+# Output: [4 5 6]
+# Note: You can also just use arr2d[1], but [1, :] is clearer in AI code.
+
+print()
+print("multidimension slicing")
+M = np.array([
+    [10,11,12,13],
+    [20,21,22,23],
+    [30,31,32,33],
+    [40,41,42,43]
+])
+print(M[1:3,1:3])
+
