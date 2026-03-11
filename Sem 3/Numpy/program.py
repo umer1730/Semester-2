@@ -117,3 +117,9 @@ filtered = data[names == "Bob"]
 print(data,"\n")
 print(filtered)
 
+print()
+print("Logical masks")
+data[data<0] = 0
+print(data,"\n")
+mask = (names == "Bob") | (names == "Will")
+print(mask)
