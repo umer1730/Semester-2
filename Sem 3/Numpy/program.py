@@ -183,3 +183,9 @@ ver = np.vstack((arr1,arr2))
 hor = np.hstack((arr1,arr2))
 print(ver)
 print(hor)
+
+print()
+print("Linear algebra in AI")
+X = np.random.standard_normal((5,5))
+mat = X.T @ X
+print(mat)
