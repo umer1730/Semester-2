@@ -1,6 +1,6 @@
 import csv
 
-with open("dataset.csv","r",newline="",encoding="utf-8") as f:
+with open("D:\\Sem 2\\Sem 3\\CSV files\\dataset.csv","r",newline="",encoding="utf-8") as f:
     reader = csv.reader(f)
 
     header = next(reader)
@@ -11,18 +11,14 @@ with open("dataset.csv","r",newline="",encoding="utf-8") as f:
             print(f"{name} earns ${salary}")
 
 print()
-with open("dataset.csv","r",newline="",encoding="utf-8") as infile:
-    with open("high_earners.csv","w",newline="",encoding="utf-8") as outfile:
+with open("D:\\Sem 2\\Sem 3\\CSV files\\dataset.csv","r",newline="",encoding="utf-8") as infile:
         reader = csv.reader(infile)
-        writer = csv.writer(outfile)
 
-        header = next(reader)         
-        writer.writerow(header)        
-
+        header = next(reader)                
         for row in reader:
-            salary = int(row[3])       
-            if salary > 70000:
-                writer.writerow(row)
+            salary = int(row[3])   # assuming salary is in column 4
+            if salary > 75000:
+                print(row)
 
 
 print()
@@ -31,7 +27,7 @@ import csv
 
 dept_data = {} 
 
-with open("dataset.csv", "r", newline="", encoding="utf-8") as f:
+with open("D:\\Sem 2\\Sem 3\\CSV files\\dataset.csv", "r", newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)  
     
     for row in reader:
