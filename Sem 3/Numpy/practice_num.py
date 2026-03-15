@@ -41,3 +41,8 @@ print(b[:,1])
 print(b[1:3, 1:3])
 
 
+print()
+a = np.array([12,5,8,130,44])
+print(a[a>10])
+print(a[a<20])
+print(np.where(a>100,0,a))
