@@ -53,3 +53,12 @@ print(salary[salary>75000])
 print(np.mean(salary))
 print(np.max(salary))
 print(np.sum(salary<60000))
+
+print()
+arr = np.arange(1,26).reshape(5,5)
+print(arr)
+print(np.diag(arr))
+
+print()
+border = np.concatenate((arr[0,:],arr[-1,:],arr[1:-1,-1]))
+print(border)
