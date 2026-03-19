@@ -5,5 +5,9 @@ A = np.array([[3, 1],
 
 b = np.array([9, 8])
 
-solution = np.linalg.solve(A, b)
-print(solution)
+solve = np.linalg.solve(A, b)
+
+inv = np.linalg.inv(A) @ b
+print(solve)
+print()
+print(inv)
