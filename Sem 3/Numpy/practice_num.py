@@ -62,3 +62,14 @@ print(np.diag(arr))
 print()
 border = np.concatenate((arr[0,:],arr[-1,:],arr[1:-1,-1]))
 print(border)
+
+print()
+a = np.arange(1,37).reshape(6,6)
+sub = a[1:5, 1:5]
+sub[0,:] = -1
+sub[-1,:] = -1
+sub[:,0] = -1
+sub[:,-1] = -1
+
+a[1:5, 1:5] = sub
+print(a)
