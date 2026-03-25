@@ -18,3 +18,11 @@ print(a+b)
 
 print()
 print("Forcing compatibility with np.newaxis")
+# If dimensions don't match, you can insert a new axis of length 1 totrigger broadcasting
+a = np.array([1,2,3])
+col_vec = a[:, np.newaxis]
+row_vec = a[np.newaxis,:]
+
+print(col_vec.shape)
+print(row_vec.shape)
+
