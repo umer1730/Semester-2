@@ -32,3 +32,22 @@ data = np.random.randn(4,3)
 col_means = data.mean(axis=0)
 deamend = data - col_means.reshape((1,3))
 print(deamend)
+
+print()
+print("Adusting spread")
+features = np.random.rand(100,5)
+col_max = features.max(axis = 0)
+normalized = features  / col_max
+print(normalized)
+
+print()
+print("stretching rule")
+x =  np.arange(4).reshape(4,1)
+y = np.array([1,2,3])
+print(x + y)
+
+print()
+print("Broadcasting in 3D arrays")
+cube = np.zeros((2,4,3))
+mat = np.ones((4,3))
+print((cube + mat).shape)
