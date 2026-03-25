@@ -26,3 +26,9 @@ row_vec = a[np.newaxis,:]
 print(col_vec.shape)
 print(row_vec.shape)
 
+print()
+print("Centering")
+data = np.random.randn(4,3)
+col_means = data.mean(axis=0)
+deamend = data - col_means.reshape((1,3))
+print(deamend)
