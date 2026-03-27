@@ -63,3 +63,16 @@ A = np.array([1,3,5,7])
 result = A.reshape(4,1)-A
 print(result)
 
+print()
+print("RGB Image brightness increase")
+image  = np.random.randint(0,255,(3,3,3))
+brightness = np.array([20,10,5])
+
+bright_image = image + brightness
+print(bright_image)
+
+print()
+print("3D roadcasting")
+cube = np.ones((2,3,4))
+mat = np.arange(12).reshape(3,4)
+print((cube+mat).shape)
