@@ -49,3 +49,10 @@ a = np.arange(1,6).reshape(5,1)
 b = np.arange(1,6)
 table = a * b
 print(table) 
+
+print()
+print("Distance from origin for points")
+points = np.array([[1,2],[4,5],[7,8]])
+origin = np.array([0,0])
+dist = np.sqrt(((points - origin)**2).sum(axis=1))
+print(dist)
