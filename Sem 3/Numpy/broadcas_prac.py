@@ -56,3 +56,10 @@ points = np.array([[1,2],[4,5],[7,8]])
 origin = np.array([0,0])
 dist = np.sqrt(((points - origin)**2).sum(axis=1))
 print(dist)
+
+print()
+print("Pairwise difference Matrix")
+A = np.array([1,3,5,7])
+result = A.reshape(4,1)-A
+print(result)
+
