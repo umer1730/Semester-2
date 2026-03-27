@@ -34,3 +34,18 @@ print("Subtract row means")
 A = np.array([[1,2,3],[4,5,6],[7,8,9]])
 row_mean = A.mean(axis=1).reshape(3,1)
 print(A - row_mean)
+
+print()
+print("Normalize matrix using column max")
+A = np.array([[1,2,3],[4,5,6],[7,8,9]])
+column_max = A.max(axis=0)
+normaliized = A / column_max
+# print(column_max)
+print(normaliized)
+
+print()
+print("create multiplication table")
+a = np.arange(1,6).reshape(5,1)
+b = np.arange(1,6)
+table = a * b
+print(table) 
