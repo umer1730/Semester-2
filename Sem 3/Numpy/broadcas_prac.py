@@ -76,3 +76,11 @@ print("3D roadcasting")
 cube = np.ones((2,3,4))
 mat = np.arange(12).reshape(3,4)
 print((cube+mat).shape)
+
+print()
+print("standardize dataset")
+data = np.random.rand(5,3)
+mean = data.mean(axis = 0)
+std = data.std(axis=0)
+Z = (data - mean) / std
+print(Z)
