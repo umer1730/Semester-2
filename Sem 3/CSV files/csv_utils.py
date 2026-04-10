@@ -9,6 +9,6 @@ def write_csv(filename,data):
         writer = csv.writer(f)
         writer.writerows(data)
 
-print(read_csv("stud.csv"))
-data = read_csv("stud.csv")
-print(write_csv("stud.csv",data))
+print(read_csv("D:\\Sem 2\\Sem 3\\CSV files\\stud.csv"))
+data = read_csv("D:\\Sem 2\\Sem 3\\CSV files\\stud.csv")
+print(write_csv("D:\\Sem 2\\Sem 3\\CSV files\\stud.csv",data))
