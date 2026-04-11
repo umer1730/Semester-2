@@ -9,6 +9,6 @@ A = np.array([
 mask = (A % 2 == 0)
 A_masked = np.where(mask, A, -np.inf)
 
-indices = np.argmax(A_masked, axis=1)
+indices = np.argmax(A_masked, axis=1)   # argmax is used for finding maximum value index
 
 print(indices)
