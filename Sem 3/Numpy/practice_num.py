@@ -73,3 +73,9 @@ sub[:,-1] = -1
 
 a[1:5, 1:5] = sub
 print(a)
+
+print()
+A = np.array([[1,2],[3,4],[5,6]])
+B = np.array([[7,8],[9,10]])
+dist = np.sqrt(((A[:,None,:] - B[None,: , :]) **2).sum(axis = 2))
+print(dist)
