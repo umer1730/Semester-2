@@ -51,3 +51,10 @@ print("Broadcasting in 3D arrays")
 cube = np.zeros((2,4,3))
 mat = np.ones((4,3))
 print((cube + mat).shape)
+
+
+print()
+print("higher dimensional broadcasting")
+a = np.ones((2,3,4))
+b = np.ones((3,1))
+print((a + b).shape)
