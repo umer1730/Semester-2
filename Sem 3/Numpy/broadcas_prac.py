@@ -32,7 +32,7 @@ print(A+ B)
 print()
 print("Subtract row means")
 A = np.array([[1,2,3],[4,5,6],[7,8,9]])
-row_mean = A.mean(axis=1).reshape(3,1)
+row_mean = A.mean(axis=1).reshape(3,1) # find avearge
 print(A - row_mean)
 
 print()
