@@ -9,5 +9,5 @@ print()
 print("Replace value using indexing")
 arr = np.array([-5,0,7,-2,3,0,9])
 
-result = np.where(arr < 0,0,np.where(arr > 0,1,-1))
+result = np.where(arr < 0,0,np.where(arr > 0,1,-1)) #masking
 print(result)
