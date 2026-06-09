@@ -29,7 +29,7 @@ print(arr.T.shape)
 
 print()
 print("Linalg module")
-X = np.array([[1,2],[3,4]])
+X = np.array([[1,2],[3,4]]) # lnear algebra
 
 X_inv = inv(X)
 print(X @ X_inv)
