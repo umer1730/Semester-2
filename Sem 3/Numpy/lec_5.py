@@ -45,7 +45,7 @@ print("stretching rule")
 x =  np.arange(4).reshape(4,1)
 y = np.array([1,2,3])
 print(x + y)
-
+# broadcassting
 print()
 print("Broadcasting in 3D arrays")
 cube = np.zeros((2,4,3))
