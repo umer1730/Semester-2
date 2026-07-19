@@ -10,7 +10,6 @@ def decNum(n):
     return ans
 print(decNum(42))
 
-
 print()
 print("Bitwise")
 print("left shift")
