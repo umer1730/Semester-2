@@ -2,6 +2,7 @@ pets = ['cats','dogs','chicken']
 animals = ['dogs','chicken','cats']
 print(pets == animals)
 
+
 print()
 print("-----------------")
 cat_1 = {
